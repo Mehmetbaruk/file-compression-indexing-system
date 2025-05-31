@@ -406,11 +406,9 @@ class DemoTab(QWidget):
         current_step = 0
         self.progress.setRange(0, total_steps)
         
-        # Header
-        self.results_text.append("===============================================")
+        # Header        self.results_text.append("===============================================")
         self.results_text.append("FILE COMPRESSION AND INDEXING SYSTEM DEMO")
         self.results_text.append("===============================================")
-        self.results_text.append("Student: Mehmet BARUK (200444076)")
         self.results_text.append(f"Date: {time.strftime('%B %d, %Y')}")
         self.results_text.append("")
         
