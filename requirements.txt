@@ -1,0 +1,7 @@
+# Core dependencies
+PyQt5>=5.15.0
+
+# Development dependencies (optional)
+# pytest>=6.0.0  # For testing
+# black>=21.0.0  # For code formatting
+# flake8>=3.8.0  # For linting

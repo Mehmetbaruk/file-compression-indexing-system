@@ -1,0 +1,96 @@
+{
+    "compression": {
+        "default_extension": ".bin",
+        "show_huffman_tree_after_compression": true,
+        "default_analysis_export_format": "txt",
+        "optimize_for_speed": false
+    },
+    "storage": {
+        "default_index_location": "./indexes",
+        "auto_update_indexes": true,
+        "default_tree_type": "rbtree",
+        "btree_order": 5
+    },
+    "visualization": {
+        "default_output_format": "txt",
+        "color_output": true,
+        "detailed_node_info": true
+    },
+    "interface": {
+        "show_welcome_message": true,
+        "verbose_output": true,
+        "confirm_operations": true,
+        "dark_mode": false,
+        "show_tooltips": true
+    },
+    "batch": {
+        "max_parallel_processes": 4,
+        "log_batch_operations": true
+    },
+    "max_history": 10,
+    "search_history": [
+        {
+            "term": "test",
+            "type": "filename",
+            "timestamp": "2025-05-11T04:22:18.491913",
+            "results_count": 0,
+            "search_time": 0.0
+        },
+        {
+            "term": "test",
+            "type": "filename",
+            "timestamp": "2025-05-11T04:42:33.038180",
+            "results_count": 0,
+            "search_time": 0.0010020732879638672
+        },
+        {
+            "term": "test",
+            "type": "filename",
+            "timestamp": "2025-05-11T04:53:24.345872",
+            "results_count": 0,
+            "search_time": 0.0
+        },
+        {
+            "term": "test",
+            "type": "content",
+            "extensions": null,
+            "timestamp": "2025-05-11T05:21:47.379641",
+            "results_count": 0
+        },
+        {
+            "term": "test_sample",
+            "type": "filename",
+            "timestamp": "2025-05-11T05:59:55.446191",
+            "results_count": 0,
+            "search_time": 0.0009567737579345703
+        },
+        {
+            "term": "test_sample",
+            "type": "filename",
+            "timestamp": "2025-05-11T06:00:48.509478",
+            "results_count": 0,
+            "search_time": 0.0
+        },
+        {
+            "term": "test",
+            "type": "content",
+            "extensions": null,
+            "timestamp": "2025-05-11T06:01:32.260774",
+            "results_count": 0
+        },
+        {
+            "type": "advanced",
+            "criteria": {
+                "filename": "",
+                "content": "test",
+                "min_size": null,
+                "max_size": null,
+                "extensions": null,
+                "modified_after": null
+            },
+            "timestamp": "2025-05-11T06:02:05.131950",
+            "results_count": 0,
+            "search_time": 0.0
+        }
+    ]
+}
