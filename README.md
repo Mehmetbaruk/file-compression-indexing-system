@@ -37,12 +37,68 @@ graph TB
     
     E --> L[🔍 Unified Search]
     E --> M[📋 Results Handler]
-    
-    style A fill:#e1f5fe
+      style A fill:#e1f5fe
     style F fill:#f3e5f5
     style I fill:#e8f5e8
     style J fill:#ffebee
 ```
+
+## 🏛️ System Architecture Overview
+
+### High-Level Architecture Diagram
+
+```
++------------------------------+
+|         CLI Interface        |
++------------------------------+
+            |        |
+            v        v
++----------------+ +----------------+
+| Compression    | | Storage        |
+| Module         | | Module         |
++----------------+ +----------------+
+| - Huffman Tree | | - B/B+ Tree    |
+| - Encoder      | | - Red-Black    |
+| - Decoder      | |   Tree         |
+| - Analyzer     | | - Index Mgmt   |
++----------------+ +----------------+
+            |        |
+            v        v
++------------------------------+
+|      File System Access      |
++------------------------------+
+```
+
+### Detailed Component Flow
+
+```mermaid
+graph TB
+    CLI[🖥️ CLI Interface] --> CM[📦 Compression Module]
+    CLI --> SM[🗂️ Storage Module]
+    
+    CM --> HT[🌳 Huffman Tree]
+    CM --> EN[🔧 Encoder]
+    CM --> DE[🔓 Decoder]
+    CM --> AN[📊 Analyzer]
+    
+    SM --> BT[🅱️ B/B+ Tree]
+    SM --> RB[🔴 Red-Black Tree]
+    SM --> IM[📇 Index Management]
+    
+    HT --> FS[💾 File System Access]
+    EN --> FS
+    DE --> FS
+    AN --> FS
+    BT --> FS
+    RB --> FS
+    IM --> FS
+      style CLI fill:#e1f5fe
+    style CM fill:#f3e5f5
+    style SM fill:#e8f5e8
+    style FS fill:#fff3e0
+```
+
+> **📸 Visual Reference**: [View Original Architecture Diagram](https://i.ibb.co/xSPw8Wxn/diagram.png)
 
 ## 🚀 Quick Start
 
